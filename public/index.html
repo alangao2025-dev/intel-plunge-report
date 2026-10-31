@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英特尔单日暴跌28.58%原因分析（2026-10-30）</title>
+<style>
+  :root { --blue:#0068b5; --bg:#f4f6f9; --card:#fff; --text:#1f2933; --muted:#64748b; --hl:#fff4c2; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; background:var(--bg); color:var(--text); line-height:1.75; }
+  header { background:linear-gradient(135deg,#00285a,var(--blue)); color:#fff; padding:32px 20px 24px; }
+  header .wrap { max-width:860px; margin:0 auto; }
+  header h1 { margin:0 0 6px; font-size:26px; }
+  header p { margin:0; opacity:.85; font-size:14px; }
+  .player { position:sticky; top:0; z-index:10; background:#fff; border-bottom:1px solid #e2e8f0; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+  .player .wrap { max-width:860px; margin:0 auto; padding:12px 20px; display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+  button { border:none; border-radius:8px; padding:10px 16px; font-size:15px; cursor:pointer; color:#fff; font-weight:600; }
+  .btn-male { background:#1d4ed8; } .btn-female { background:#db2777; }
+  .btn-ctl { background:#475569; } button:disabled { opacity:.45; cursor:not-allowed; }
+  .speed { font-size:14px; color:var(--muted); display:flex; align-items:center; gap:6px; }
+  #status { font-size:13px; color:var(--muted); width:100%; }
+  main { max-width:860px; margin:0 auto; padding:20px; }
+  section { background:var(--card); border-radius:12px; padding:18px 22px; margin-bottom:16px; box-shadow:0 1px 3px rgba(0,0,0,.05); }
+  h2 { margin:0 0 10px; font-size:20px; color:var(--blue); }
+  .conclusion { border-left:5px solid #dc2626; }
+  .big { font-size:34px; font-weight:800; color:#dc2626; }
+  table { width:100%; border-collapse:collapse; margin:8px 0; font-size:15px; }
+  th, td { border:1px solid #e2e8f0; padding:8px 10px; text-align:left; }
+  th { background:#f1f5f9; }
+  ul, ol { padding-left:22px; margin:6px 0; }
+  .r { transition:background .2s; border-radius:4px; }
+  .reading { background:var(--hl); }
+  .note { font-size:13px; color:var(--muted); }
+  a { color:var(--blue); word-break:break-all; }
+  footer { text-align:center; font-size:12px; color:var(--muted); padding:20px; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <h1>英特尔（INTC）单日暴跌 28.58% 原因综合分析</h1>
+  <p>事件日期：2026年10月30日（周五，美东时间） · 整理日期：2026年10月31日</p>
+</div></header>
+
+<div class="player"><div class="wrap">
+  <button class="btn-male" id="btnMale">🔊 男声朗读</button>
+  <button class="btn-female" id="btnFemale">🔊 女声朗读</button>
+  <button class="btn-ctl" id="btnPause" disabled>⏸ 暂停</button>
+  <button class="btn-ctl" id="btnStop" disabled>⏹ 停止</button>
+  <label class="speed">语速
+    <select id="rate"><option value="0.8">0.8x</option><option value="1" selected>1.0x</option><option value="1.2">1.2x</option><option value="1.5">1.5x</option></select>
+  </label>
+  <div id="status">点击按钮开始朗读（使用浏览器自带的语音，建议用 Chrome / Edge / Safari）</div>
+</div></div>
+
+<main id="article">
+  <section class="conclusion">
+    <h2 class="r">结论</h2>
+    <p class="r">英特尔在2026年10月30日收盘下跌 <span class="big">28.58%</span>，据CNN报道，这是该股自1974年以来最差的单日表现。前一日收盘价为92.07美元，按跌幅推算收盘价约为65.8美元。</p>
+    <p class="r"><b>直接原因是第四季度业绩指引远低于市场预期。</b>第三季度财报本身超出预期，但被糟糕的指引完全盖过。</p>
+  </section>
+
+  <section>
+    <h2 class="r">一、直接原因：第四季度指引大幅低于预期</h2>
+    <table>
+      <tr class="r"><th>项目</th><th>英特尔指引</th><th>市场预期</th></tr>
+      <tr class="r"><td>四季度营收</td><td>150亿至160亿美元</td><td>约171亿美元</td></tr>
+      <tr class="r"><td>四季度调整后每股收益</td><td>0.25美元</td><td>0.43美元</td></tr>
+      <tr class="r"><td>四季度非GAAP毛利率</td><td>38%</td><td>三季度为43%</td></tr>
+    </table>
+    <p class="r">营收指引中值比预期低约9%，每股收益比预期低将近40%。</p>
+  </section>
+
+  <section>
+    <h2 class="r">二、指引疲弱的三个原因</h2>
+    <ol>
+      <li class="r"><b>内存涨价拖累PC市场，这是最核心的原因。</b>内存芯片严重短缺、价格大涨，推高了PC售价，挤压了企业的IT预算。英特尔预计PC市场2026年下滑12%，2027年再下滑10%。首席财务官津斯纳表示，PC市场放缓至少会延续到明年上半年。CEO陈立武预计，到2027年这将成为非常严峻的问题。</li>
+      <li class="r"><b>以色列工厂爆炸停产。</b>10月中旬，位于以色列加特镇的工厂发生爆炸事故，导致较长时间停产，影响10纳米芯片出货。第四季度营收因此减少约3亿美元，两个季度合计约6亿美元，并影响毛利率约200个基点。</li>
+      <li class="r"><b>产能不足。</b>服务器CPU需求旺盛，但原材料短缺加上产能瓶颈，订单无法及时转化为收入。陈立武说：我有些失望，因为我们本季度未能满足强劲的客户需求。</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2 class="r">三、第三季度财报本身不差</h2>
+    <ul>
+      <li class="r">营收165亿美元，同比增长21%；调整后每股收益0.52美元，高于约0.41到0.43美元的预期。</li>
+      <li class="r">数据中心与AI业务营收73亿美元，同比增长78%，是15年来最快增速。</li>
+      <li class="r">代工业务营收67亿美元，同比增长58%，但仍处于亏损状态。</li>
+      <li class="r">PC业务营收81亿美元，同比下降5%。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="r">四、跌幅被放大的因素</h2>
+    <ul>
+      <li class="r"><b>此前涨幅过大。</b>财报前英特尔股价今年已上涨约150%，估值中已计入大量AI服务器CPU的乐观预期，一旦出现利空便集中获利了结。D.A.戴维森将评级从买入下调至中性，报告标题为“还没修好”，认为PC疲软如此严重，很难支撑当前的估值倍数。</li>
+      <li class="r"><b>代工业务仍无外部客户。</b>18A制程已在亚利桑那量产，但还没有外部客户。陈立武只表示未来两个季度会宣布几家客户。</li>
+      <li class="r"><b>科技股整体情绪低迷。</b>同日亚马逊财报不及预期，前一日谷歌创下史上最大单日跌幅，市场担心AI投入能否回本。纳斯达克指数当天下跌约2.9%，是6月以来最差的一天。</li>
+      <li class="r"><b>波及同行。</b>AMD和戴尔跌超10%，高通跌11%，博通跌超5%，英伟达跌约3%到4%。</li>
+      <li class="r"><b>大股东损失。</b>美国政府持有约10%的股份，当天持股市值缩水约120亿美元；英伟达所持英特尔股份市值缩水约60亿美元。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="r">五、分析师下调目标价</h2>
+    <p class="r">摩根大通从85美元下调至80美元，杰富瑞从120美元下调至85美元，派珀·桑德勒从110美元下调至90美元，TD考恩下调至75美元。KeyBanc也下调了目标价，但维持买入评级。</p>
+  </section>
+
+  <section>
+    <h2 class="r">后续值得关注</h2>
+    <ul>
+      <li class="r">内存价格何时回落，PC需求何时恢复。</li>
+      <li class="r">至强服务器芯片的产能能否跟上需求。</li>
+      <li class="r">代工业务能否在两个季度内宣布外部客户。</li>
+      <li class="r">以色列工厂的复产进度。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="r">存疑与未核实事项</h2>
+    <ul>
+      <li class="r">跌幅说法不一：盘前报道为22%到25%，开盘一度超过29%，盘中接近31%，收盘为28.58%。</li>
+      <li class="r">以色列工厂事故伤亡情况说法不一，CNBC称2死1重伤，界面新闻称3人重伤，以官方通报为准。</li>
+      <li class="r">未能获取英特尔官网财报新闻稿原文，财报数字来自多家媒体，各家报道一致。</li>
+    </ul>
+  </section>
+
+  <section class="note">
+    <h2>来源</h2>
+    <ul>
+      <li><a href="https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html" target="_blank" rel="noopener">CNBC（2026-10-30）</a></li>
+      <li><a href="https://finance.sina.com.cn/tech/roll/2026-10-30/doc-iniwzprn2142094.shtml" target="_blank" rel="noopener">新浪科技 / 界面新闻（2026-10-30）</a></li>
+      <li><a href="https://247wallst.com/investing/2026/10/30/intel-plunges-25-as-weak-outlook-and-pc-slump-overshadow-earnings-beat-dell-tumbles-13-amd-sinks-10-nvidia-falls-3/" target="_blank" rel="noopener">24/7 Wall St.（2026-10-30）</a></li>
+      <li><a href="https://www.stocktitan.net/articles/stock-market-today-live-october-30-2026" target="_blank" rel="noopener">StockTitan（2026-10-30）</a></li>
+    </ul>
+    <p>本页仅为信息整理，不构成投资建议。</p>
+  </section>
+</main>
+<footer>临时页面 · 2026-10-31</footer>
+
+<script>
+(function () {
+  const synth = window.speechSynthesis;
+  const $ = (id) => document.getElementById(id);
+  const status = $("status"), btnPause = $("btnPause"), btnStop = $("btnStop");
+  if (!synth) {
+    status.textContent = "当前浏览器不支持语音朗读，请换用 Chrome、Edge 或 Safari。";
+    $("btnMale").disabled = $("btnFemale").disabled = true;
+    return;
+  }
+
+  const MALE = /(yunxi|yunyang|yunjian|yunhao|yunfeng|yunze|kangkang|li-?mu|male|男|zhiwei|liang)/i;
+  const FEMALE = /(xiaoxiao|xiaoyi|xiaohan|xiaomo|xiaochen|huihui|yaoyao|tingting|ting-ting|meijia|sin-ji|yu-?shu|lili|female|女|google)/i;
+  let voices = [];
+  function loadVoices() {
+    voices = synth.getVoices().filter(v => /^zh/i.test(v.lang) || /chinese|普通话|中文/i.test(v.name));
+    voices.sort((a, b) => (/zh[-_]CN/i.test(b.lang) - /zh[-_]CN/i.test(a.lang)) || (/natural|online/i.test(b.name) - /natural|online/i.test(a.name)));
+  }
+  loadVoices();
+  if (synth.onvoiceschanged !== undefined) synth.onvoiceschanged = loadVoices;
+
+  // 找到对应性别的声音；找不到时用默认中文声音并调整音调模拟
+  function pickVoice(gender) {
+    loadVoices();
+    const re = gender === "male" ? MALE : FEMALE;
+    const other = gender === "male" ? FEMALE : MALE;
+    let v = voices.find(x => re.test(x.name) && !other.test(x.name)) || voices.find(x => re.test(x.name));
+    if (v) return { voice: v, pitch: 1, simulated: false };
+    return { voice: voices[0] || null, pitch: gender === "male" ? 0.6 : 1.3, simulated: true };
+  }
+
+  // 朗读单元：页面上带 .r 的元素；表格行把单元格用逗号连接
+  const units = Array.from(document.querySelectorAll("#article .r"));
+  function textOf(el) {
+    if (el.tagName === "TR") return Array.from(el.cells).map(c => c.innerText.trim()).join("，") + "。";
+    return el.innerText.replace(/\s+/g, " ").trim();
+  }
+  // 长句拆分，避免部分浏览器朗读超过约15秒后中断
+  function split(text) {
+    const parts = text.match(/[^。！？；]+[。！？；]?/g) || [text];
+    const out = [];
+    parts.forEach(p => { while (p.length > 120) { out.push(p.slice(0, 120)); p = p.slice(120); } if (p.trim()) out.push(p); });
+    return out;
+  }
+
+  let queue = [], idx = 0, current = null, playing = false, paused = false, keepAlive = null;
+  function clearHl() { units.forEach(u => u.classList.remove("reading")); }
+
+  function start(gender) {
+    stop();
+    const cfg = pickVoice(gender);
+    current = { gender, ...cfg };
+    queue = [];
+    units.forEach(el => split(textOf(el)).forEach(t => queue.push({ el, t })));
+    idx = 0; playing = true; paused = false;
+    const name = cfg.voice ? cfg.voice.name : "浏览器默认声音";
+    status.textContent = (gender === "male" ? "男声" : "女声") + "朗读中：" + name +
+      (cfg.simulated ? "（设备上没有对应性别的中文声音，已通过调整音调模拟）" : "");
+    btnPause.disabled = btnStop.disabled = false;
+    btnPause.textContent = "⏸ 暂停";
+    // Chrome 的长时间朗读保活
+    keepAlive = setInterval(() => { if (synth.speaking && !synth.paused) { synth.pause(); synth.resume(); } }, 10000);
+    next();
+  }
+
+  function next() {
+    if (!playing) return;
+    if (idx >= queue.length) { finish("朗读完毕"); return; }
+    const item = queue[idx];
+    clearHl(); item.el.classList.add("reading");
+    item.el.scrollIntoView({ behavior: "smooth", block: "center" });
+    const u = new SpeechSynthesisUtterance(item.t);
+    u.lang = current.voice ? current.voice.lang : "zh-CN";
+    if (current.voice) u.voice = current.voice;
+    u.pitch = current.pitch;
+    u.rate = parseFloat($("rate").value);
+    u.onend = () => { idx++; next(); };
+    u.onerror = (e) => { if (e.error === "interrupted" || e.error === "canceled") return; idx++; next(); };
+    synth.speak(u);
+  }
+
+  function finish(msg) {
+    playing = false; paused = false;
+    clearInterval(keepAlive);
+    clearHl();
+    btnPause.disabled = btnStop.disabled = true;
+    btnPause.textContent = "⏸ 暂停";
+    status.textContent = msg;
+  }
+  function stop() { playing = false; synth.cancel(); finish("已停止"); }
+
+  $("btnMale").onclick = () => start("male");
+  $("btnFemale").onclick = () => start("female");
+  btnStop.onclick = stop;
+  btnPause.onclick = () => {
+    if (!playing) return;
+    if (!paused) { synth.pause(); paused = true; btnPause.textContent = "▶ 继续"; }
+    else { synth.resume(); paused = false; btnPause.textContent = "⏸ 暂停"; }
+  };
+  window.addEventListener("beforeunload", () => synth.cancel());
+})();
+</script>
+</body>
+</html>
